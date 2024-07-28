@@ -75,7 +75,9 @@ export default function Generator(props) {
               }}
               className={
                 "bg-black border duration-200 hover:border-neutral-600 px-4 py-3 rounded-lg " +
-                (type === battle ? "border-neutral-600  " : "border-neutral-900")
+                (type === battle
+                  ? "border-neutral-600  "
+                  : "border-neutral-900")
               }
               key={typeIndex}
             >
