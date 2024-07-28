@@ -8,7 +8,7 @@ function Header(props) {
   return (
     <div className="flex flex-col gap-4">
       <div className="flex items-center justify-center gap-2">
-        <p className="text-3xl sm:text-4xl md:text-5xl font-semibold text-slate-400">
+        <p className="text-3xl sm:text-4xl md:text-5xl font-semibold text-gray-500">
           {index}
         </p>
         <h4 className="text-xl sm:text-2xl md:text-3xl">{title}</h4>
@@ -74,8 +74,8 @@ export default function Generator(props) {
                 setBattle(type);
               }}
               className={
-                "bg-slate-950 border duration-200 hover:border-blue-900 px-4 py-3 rounded-lg " +
-                (type === battle ? "border-blue-900  " : "border-blue-400")
+                "bg-black border duration-200 hover:border-neutral-600 px-4 py-3 rounded-lg " +
+                (type === battle ? "border-neutral-600  " : "border-neutral-900")
               }
               key={typeIndex}
             >
