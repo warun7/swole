@@ -91,7 +91,7 @@ export default function Generator(props) {
         title={"Lock on Target"}
         description={"Select the muscles judged for annihilation."}
       />
-      <div className="bg-slate-950 border border-solid border-blue-900 rounded-lg flex flex-col">
+      <div className="bg-black border border-solid border-gray-600 rounded-lg flex flex-col">
         <button
           onClick={toggleModal}
           className="relative p-3 flex items-center justify-center"
@@ -111,8 +111,8 @@ export default function Generator(props) {
                 <button
                   onClick={() => updateMuscles(muscleGroup)}
                   className={
-                    "hover:text-blue-400 duration-200 " +
-                    (muscles.includes(muscleGroup) ? " text-blue-400" : " ")
+                    "text-gray-700 hover:text-gray-300 duration-200 " +
+                    (muscles.includes(muscleGroup) ? " text-gray-400" : " ")
                   }
                   key={muscleGroupIndex}
                 >
@@ -136,8 +136,8 @@ export default function Generator(props) {
                 setGoal(scheme);
               }}
               className={
-                "bg-slate-950 border duration-200 hover:border-blue-900 py-3 rounded-lg px-4 " +
-                (scheme === goal ? "border-blue-900  " : "border-blue-400")
+                "bg-black border duration-200 hover:border-gray-500 py-3 rounded-lg px-4 " +
+                (scheme === goal ? "border-gray-500  " : "border-gray-900")
               }
               key={schemeIndex}
             >
