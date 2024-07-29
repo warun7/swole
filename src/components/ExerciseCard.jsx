@@ -9,7 +9,7 @@ export default function ExerciseCard(props) {
   }
 
   return (
-    <div className="p-4 rounded-md flex flex-col gap-4 bg-slate-950 sm:flex-wrap">
+    <div className="p-4 rounded-md flex flex-col gap-4 bg-zinc-900 sm:flex-wrap">
       <div className="flex flex-col sm:flex-row sm:items-center sm:flex-wrap gap-x-4">
         <h4 className="text-3xl hidden sm:inline sm:text-4xl md:text-5xl font-semibold text-slate-400">
           0{index + 1}
@@ -24,7 +24,7 @@ export default function ExerciseCard(props) {
         <p className="capitalize">{exercise.muscles.join(" & ")}</p>
       </div>
 
-      <div className="flex flex-col bg-slate-950 rounded gap-2 ">
+      <div className="flex flex-col bg-zinc-900   rounded gap-2 ">
         {exercise.description.split("___").map((val) => {
           return (
             <div key={null} className="text-sm">
@@ -39,7 +39,7 @@ export default function ExerciseCard(props) {
           return (
             <div
               key={info}
-              className="flex flex-col p-2 rounded border-[1.5px] border-solid border-slate-900 w-full"
+              className="flex flex-col p-2 rounded border-[1.5px] border-solid border-slate-950 w-full"
             >
               <h3 className="capitalize text-slate-400 text-sm">
                 {info === "reps" ? `${exercise.unit}` : info}
@@ -50,7 +50,7 @@ export default function ExerciseCard(props) {
         })}
         <button
           onClick={handleSetIncrement}
-          className="flex flex-col p-2 rounded border-[1.5px] duration-200 border-solid border-blue-900 hover:blue-600 w-full duration-200"
+          className="flex flex-col p-2 rounded border-[1.5px] duration-200 border-solid border-gray-500 hover:bg-zinc-700 w-full duration-200"
         >
           <h3 className="text-slate-400 text-sm capitalize">Sets Completed</h3>
           <p className="font-medium">{setsCompleted} / 4</p>
